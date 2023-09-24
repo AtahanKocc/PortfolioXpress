@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaTwitter, FaFacebook, FaLinkedin, FaArrowDown} from 'react-icons/fa';
-import avatar from '../assets/avatar.png';
+import avatar2 from '../assets/avatar2.png';
 
 
 
@@ -9,22 +9,28 @@ const Hero = () => {
      {   
         id:1,
         link: "https://twitter.com/AtahanKoc",
-        icons: <FaTwitter />,
+        icon: <FaTwitter />,
      },
      {   
         id:2,
         link: "https://www.facebook.com/",
-        icons: <FaFacebook />,
+        icon: <FaFacebook />,
      },
 
      {   
         id:3,
         link: "https://www.linkedin.com/in/atahankoc/",
-        icons: <FaLinkedin />,
+        icon: <FaLinkedin />,
      },
 
     ];
  
+    window.addEventListener('scroll', function () {
+        const downArrow = document.querySelector('.down-arrow');
+        if (this.scrollY >=90) downArrow.classList.add('hide-down-arrow');
+         else downArrow.classList.remove('hide-down-arrow');
+      });
+
     return (
     <section className='min-h-screen flex flex-col justify-start items-center p-5 text-center'>
         <h2 className='text-5xl text-rose-600 uppercase font-bold'>Atahan Koc</h2>
@@ -33,8 +39,37 @@ const Hero = () => {
         Hi! I'm Atahan. I am a graduate of Computer Engineering from Istanbul Medipol University. 
         Currently working as a Software Engineer at Geovision Group 
         </p>
+
+        {/* Social Icons */}
+        <div className='flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3'>
+         {SOCIAL.map(({id, link, icon}) => (
+              <a 
+              href={link} 
+              key={id}
+              target='_blank'
+              rel= 'noopener noreferrer' 
+              className='cursor-pointer duration-300 hover:text-rose-500 text-white'
+              >
+               {icon}
+              </a>  
+         ))}
+         </div>
+
+         {/*avatar and resume*/}
+
+         <div>
+            <img src={avatar2} alt='avatar' 
+            className='w-60 h-60 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b
+           '/>
+            <a href="/atahankoc_cv.pdf" download={true} className="flex items-center
+            justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg">Resume</a>
+         </div>
+
+      <div className='mt-10 down-arrow'>
+         <FaArrowDown className='text-rose-500 text-3xl animate-bounce mt-10'/>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Hero;
