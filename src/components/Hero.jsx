@@ -47,8 +47,8 @@ const Hero = () => {
               href={link} 
               key={id}
               target='_blank'
-              rel= 'noopener noreferrer' 
-              className='cursor-pointer duration-300 hover:text-rose-500 text-white'
+              rel= 'noopener noreferrer'  // pencerenin güvenliği ile ilgili önlemler almak için kullanılır
+              className='cursor-pointer duration-600 hover:text-rose-500 text-white'
               >
                {icon}
               </a>  

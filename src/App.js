@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-
+import Services from "./components/Services";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,6 +13,7 @@ function App() {
 
       <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
        <Hero />
+       <Services />
       </main>
     </div>
   );
