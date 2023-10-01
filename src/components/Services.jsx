@@ -32,7 +32,7 @@ const Services = () => {
     ];
 
   return (
-    <Section title="Services ⚒️" subtitle="Here are all the services that I provide to my clients. If you don't find something that you are looking for than please send me an email"
+    <Section title="Services ⚒️" subtitle="Here is a list of every service I offer to my customers. Please email me if you are unable to find what you are looking for. I am always happy to help."
     >
 
         <div className='grid gap-10 lg:grid-cols-2'>
@@ -43,7 +43,7 @@ const Services = () => {
                     <img src={image} alt={title} className='w-36 h-36 md:w-44 md:h-44 object-contain' />
                     <h3 className='mt-5 text-base'>{title}</h3>
                 </div>
-))}
+            ))}
         </div>
 
     </Section>
