@@ -34,7 +34,8 @@ const Portfolio = () => {
   return (
     <Section
       title="Portfolio 📝"
-      subtitle="There are all the projects that I have worked on. Some of them I have worked before I gained some experience. So go genetle on them."
+      subtitle="These are all projects I've completed. 
+      I've worked for some of them before I had any experience."
     >
       <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
         {projects.map(({ id, image, title, github, demo }) => (
