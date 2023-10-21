@@ -1,10 +1,13 @@
 import React from 'react'
 import Section from "./common/Section"
 
-import commerce from "../assets/commerce.png";
-import research from "../assets/research.png";
-import web from "../assets/web.png";
-import mobile from "../assets/mobile.png";
+//import commerce from "../assets/commerce.png";
+// import web from "../assets/web.png";
+// import mobile from "../assets/mobile.png";
+import commerce from "../assets/shopping.png";
+import mobile from "../assets/development.png";
+import design from "../assets/ux-design.png";
+import web from "../assets/coding.png";
 
 const Services = () => {
 
@@ -26,8 +29,8 @@ const Services = () => {
         },
         {
             id:4,
-            image:research,
-            title:"Research and Development",
+            image:design,
+            title:"UI/UX Designer",
         },
     ];
 
