@@ -37,7 +37,7 @@ const Hero = () => {
         <h3 className='py-3 text-2xl'>Software Engineer</h3>
         <p className='max-w-xl font-light text-gray-500'>  
         Hi! I'm Atahan. I am a graduate of Computer Engineering from Istanbul Medipol University. 
-        Currently working as a Software Engineer at Geovision Group 
+        I am currently working as a Software Engineer.
         </p>
 
         {/* Social Icons */}
@@ -61,7 +61,7 @@ const Hero = () => {
             <img src={avatar2} alt='avatar' 
             className='w-60 h-60 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b
            '/>
-            <a href="/atahankoc_cv.pdf" download={true} className="flex items-center
+            <a href="/AtahanKoc_Cv.pdf" download={true} className="flex items-center
             justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg">Resume</a>
          </div>
 

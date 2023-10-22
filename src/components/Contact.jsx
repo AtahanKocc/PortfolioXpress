@@ -34,7 +34,7 @@ const Contact = () => {
         <div><img src={contact} alt='contact info' className='w-32 h-32'></img></div>
         <div>
             <p className='max-w-xs md:max-w-lg font-extralight'>
-                I'm open to talk regarding freelancing or full-time opportunities.
+               I'm open to talk regarding freelancing or full-time opportunities.
             </p>
         </div>
         <div className='flex w-full items-center justify-evenly text-3xl'>
@@ -87,6 +87,14 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex focus:outline-none border-gray-400'
                    ></textarea>
                 </div>
+            </div>
+
+            <div className='flex items-center justify-center'>
+              <button className='my-8 bg-gradient-to-r from-rose-600 to-teal-500
+              text-white px-6 py-3 uppercase rounded-md tracking-wider
+              cursor-pointer hover:scale-105 duration-150'>
+                    Send Message
+              </button>
             </div>
           </form>
         </div>
