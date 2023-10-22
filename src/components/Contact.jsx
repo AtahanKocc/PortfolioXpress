@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from "./common/Section"
-import {FaTwitter, FaFacebook, FaLinkedin, FaArrowDown} from 'react-icons/fa';
+import {FaTwitter, FaFacebook, FaLinkedin} from 'react-icons/fa';
 import contact from '../assets/development.png'
 
 
