@@ -63,7 +63,7 @@ const Skills = () => {
 
     return (
         <Section
-            title="Skills ⚒️"
+            title="Skills 🛠️"
             subtitle="These are the technologies I've worked with"
         >
             <div className='grid grid-cols-4 gap-5'>
