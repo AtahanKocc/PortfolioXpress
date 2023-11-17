@@ -64,7 +64,6 @@ const Hero = () => {
             <a href="/jason_cv.pdf" download={true} className="flex items-center
             justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg">Resume</a>
          </div>
-
       <div className='mt-10 down-arrow'>
          <FaArrowDown className='text-rose-500 text-3xl animate-bounce mt-10'/>
       </div>
